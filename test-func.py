@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import matg
+import math
 import numpy
 import matplotlib.pyplot as mpp
 
