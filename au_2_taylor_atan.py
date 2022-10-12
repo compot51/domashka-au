@@ -1,6 +1,6 @@
 import math
 
-iter = 100
+const = 100
 
 def my_atan(x):  # e^x
     """
@@ -8,7 +8,7 @@ def my_atan(x):  # e^x
     ряда Тейлора для окрестности 0
     """
     sum = 0
-    for i in range(iter):
+    for i in range(const):
         pow = 2 * i + 1
         sum += ((-1) ** i) / (2 * n + 1) * x ** pow
     return sum
