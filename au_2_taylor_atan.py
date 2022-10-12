@@ -10,7 +10,7 @@ def my_atan(x):  # e^x
     sum = 0
     for i in range(const):
         pow = 2 * i + 1
-        sum += ((-1) ** i) / (2 * n + 1) * x ** pow
+        sum += ((-1) ** i) / (2 * i + 1) * x ** pow
     return sum
 
 help(math.atan)
