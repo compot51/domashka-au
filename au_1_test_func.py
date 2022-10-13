@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import math
-import numpy
-import matplotlib.pyplot as mpp
+import math  # импортируем библиотеку с мат. функциями
+import numpy  # импортируем библиотеку numpy
+import matplotlib.pyplot as mpp  # импортируем matplotlib.pyplot как mpp
 
 # Эта программа рисует график функции, заданной выражением ниже
 
