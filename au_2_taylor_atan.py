@@ -23,7 +23,7 @@ help(my_atan)
 print(math.atan(0.2))
 print(my_atan(0.2))
 
-arg = numpy.arange(-1.5, 1.5, 0.01)
+arg = numpy.arange(-1.2, 1.2, 0.01)
 
 mpp.plot(arg, [my_atan(a) for a in arg], linewidth = 3.0, color = "red")
 mpp.plot(arg, [math.atan(a) for a in arg], linewidth = 1.0, color = "cyan")
