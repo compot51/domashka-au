@@ -32,7 +32,7 @@ def frac(scale, move):
 
 # speed(0.01)
 penup()
-goto(-450, -150)
+goto(-150, 0)
 pendown()
-frac(4, 150)
+frac(4, 50)
 penup()
