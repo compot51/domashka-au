@@ -24,13 +24,25 @@ def rabin_karp(text, pattern):
     result = []
 
     # Менять отсюда =) ---- vvvvv ----
-
+    hsp = 0
+    hst = 0
+    if (len(pattern) > len(text)):
+        return result
+    for i in range(len(pattern)):
+        hsp += ord(pattern[i])
+        hst += ord(text[i])
+    # print(pattern)
+    # print(text)
+    # print(hsp, hst)
     for i in range(len(text) - len(pattern) + 1 - (len(pattern) == 0)):
-        if hash(pattern) == hash(text[i : i + len(pattern)]):
+        if i:
+            hst += ord(text[i + len(pattern) - 1])
+            hst -= ord(text[i - 1])
+        if hsp == hst:
             result.append(i)
-
+        # print(i, hsp, hst)
+                
     # Менять до сюда =) ---- ^^^^^ ----
-
     return result
 
 
@@ -39,8 +51,8 @@ class RabinKarpTest(unittest.TestCase):
 
     def setUp(self):
         """Инициализация"""
-        self.text1 = 'axaxaxax'
-        self.pattern1 = 'xax'
+        self.text1 = 'ахахахах'
+        self.pattern1 = 'хах'
         self.text2 = 'bababab'
         self.pattern2 = 'bab'
 
@@ -91,4 +103,5 @@ class RabinKarpTest(unittest.TestCase):
 
 # Запуск тестов
 if __name__ == '__main__':
+    # print(ord('a'), ord('а'), ord('х'))
     unittest.main()
