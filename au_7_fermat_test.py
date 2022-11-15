@@ -1,8 +1,8 @@
 def fermat_test(n):
     for a in range(1, n):
         if (a ** (n - 1)) % n != 1:
-            return 0
-    return 1
+            return False
+    return True
 
 class prime_tests:
 
