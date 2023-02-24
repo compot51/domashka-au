@@ -1,0 +1,5 @@
+<class 'pure_python.Fate'> 54276433 0.5382744400001684
+<class 'pure_cython.Fate'> 54276433 0.5280601599999499
+<class 'pyx_cython.Fate'> 54276433 0.10817286999990756
+<class 'mypy_python.Fate'> 54276433 0.48237659000005806
+<class 'numba.experimental.jitclass.base.Fate'> 54276433 1.3808512100000372
