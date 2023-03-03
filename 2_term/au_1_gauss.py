@@ -21,7 +21,7 @@ def gauss(a, b):
     def backward():
         x = numpy.zeros(N, dtype=float)
         x[N - 1] = b[N - 1] / a[N - 1][N - 1]
-        for i in range(N):
+        for i in range(N - 2, -1, -1):
             sum = 0
             for j in range(i + 1, N):
                 sum += a[i][j] * x[j]
