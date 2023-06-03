@@ -3,7 +3,7 @@ import numpy
 import matplotlib.pyplot as plt
 from scipy import stats
 
-df = pandas.read_csv("monte_py.csv")
+df = pandas.read_csv("monte_pi.csv")
 
 # df['experiments'].plot(kind="bar")
 
